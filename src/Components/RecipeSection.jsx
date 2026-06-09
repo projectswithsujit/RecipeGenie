@@ -8,6 +8,7 @@ export default function RecipeSection({ list }) {
     const [recipe, setRecipe] = useState()
 
     useEffect(() => {
+        setRecipe("Loading...")
         const getRecipe = async () => {
             try {
                 const response = await fetch("https://server-zalb.onrender.com/recipe", {
