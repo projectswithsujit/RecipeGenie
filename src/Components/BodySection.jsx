@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Ingredients from "./ingredients"
 import RecipeSection from "./RecipeSection"
+import Footer from "./Footer"
 export default function BodySection() {
 
     // Ingredients array
@@ -73,5 +74,6 @@ export default function BodySection() {
         { <RecipeSection list={list}/> }
 
 
+        <Footer />
     </div>)
 }
