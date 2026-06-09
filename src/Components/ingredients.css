@@ -1,0 +1,52 @@
+/* Ingredients List Container */
+.ingredients-list {
+    width: 360px;
+    margin: 25px auto;
+    padding: 20px 25px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.08);
+    font-family: var(--primary-font);
+}
+
+/* Heading */
+.ingredients-list h2 {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+}
+
+/* List */
+.ingredients-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* List Item */
+.ingredients-list li {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    color: #374151;
+    font-size: 0.95rem;
+}
+
+/* Last item */
+.ingredients-list li:last-child {
+    border-bottom: none;
+}
+
+/* Bullet */
+.ingredients-list li::before {
+    content: "•";
+    color: black;
+    font-size: 1.2rem;
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+
+

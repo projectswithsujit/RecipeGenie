@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap');
+
+
+:root {
+    --primary-color: black;
+    --primary-font: Roboto;
+    --primary-btn-bg: black;
+    --primary-btn-color: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* header section css */
+header{
+    background-color: white;
+    padding: 8px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+header span{
+    margin: 0 10px;
+}
+
+    /* header image css */
+    header img{
+        width: 35px;
+        height: 45px;
+    }
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------- */
+
+/* body section css */
+
+.body-section{
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 8px;
+}
+form > input{
+    padding: 10px 30px;
+    margin: 8px;
+    width: 165px;
+    font-family: var(--primary-font);
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    transition: 0.3s ease;
+}
+form > input:hover{
+    border-color: #888;
+}
+form > input:focus{
+    outline: none;
+    border-color: black;
+    box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.05);
+}
+form > button{
+    padding: 10px 30px;
+    margin: 8px;
+    width: 165px;
+    font-family: var(--primary-font);
+    color: var(--primary-btn-color);
+    background-color: var(--primary-btn-bg);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+form > button:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6)
+}
+.error-message {
+    width: 165px;
+    margin: 5px 0 8px 0;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    color: #b91c1c; /* deep red */
+    background-color: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+    font-family: var(--primary-font);
+    text-align: center;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+
+/* generate-using-ai-btn css */
+
+.gen-recipe{
+    display: block;
+    margin: 10px auto;
+    padding: 10px 30px;
+    width: 165px;
+    font-family: var(--primary-font);
+    color: var(--primary-btn-color);
+    background-color: var(--primary-btn-bg);
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.gen-recipe:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6)
+}
+.atleast-message{
+    text-align: center;
+    width: 165px;
+    margin: 5px auto 8px auto;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+    background-color: #fefce8; /* light yellow background */
+    color: #a16207; /* dark amber/yellow text */
+    border: 1px solid #fde68a; /* soft yellow border */
+    border-radius: 6px;
+    font-family: var(--primary-font);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+}
